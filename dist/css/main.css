@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  background: #333333;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  margin: 2em;
+}
+
+.nav__link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav__list {
+  list-style: none;
+  background: linear-gradient(#2E3258, #333333);
+}
+.nav__list:first-child {
+  padding-top: 1em;
+}
+
+.nav__item {
+  padding: 0.5em 0 0.5em;
+}
+.nav__item:hover {
+  background: linear-gradient(to left, #2E3258, #88C9F9);
+  transition: background-color 1s ease-in;
+}
+
+/*# sourceMappingURL=main.css.map */
