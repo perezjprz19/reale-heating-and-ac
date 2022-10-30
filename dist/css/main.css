@@ -1,3 +1,8 @@
+* {
+  border: 1px solid red;
+  border-style: double-line;
+}
+
 body {
   margin: 0;
   background: #333333;
@@ -9,7 +14,15 @@ header {
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
-  margin: 2em;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+.nav {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .nav__link {
@@ -17,20 +30,58 @@ header {
   text-decoration: none;
 }
 
+.burger {
+  color: white;
+  background: transparent;
+  font-size: 2em;
+  width: max-content;
+}
+.burger:hover, .burger:active {
+  cursor: pointer;
+}
+
+.mobile__closed {
+  display: none;
+}
+
 .nav__list {
   list-style: none;
   background: linear-gradient(#2E3258, #333333);
+  position: absolute;
+  margin-top: 2.5em;
+  animation: 1s circle-open;
+  border-radius: 10px;
 }
 .nav__list:first-child {
   padding-top: 1em;
 }
 
+.nav__list-close {
+  animation: 1s circle-close;
+}
+
 .nav__item {
-  padding: 0.5em 0 0.5em;
+  padding: 0.5em;
 }
 .nav__item:hover {
   background: linear-gradient(to left, #2E3258, #88C9F9);
-  transition: background-color 1s ease-in;
+}
+
+@keyframes circle-open {
+  0% {
+    clip-path: circle(0% at top);
+  }
+  100% {
+    clip-path: circle(100%);
+  }
+}
+@keyframes circle-close {
+  0% {
+    clip-path: circle(100%);
+  }
+  100% {
+    clip-path: circle(0% at top);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

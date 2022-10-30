@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/svg" sizes="32x32" href="src/images/Logo.svg">
 
@@ -23,7 +23,13 @@
     <header>
         <img src="src/images/Logo.svg" alt="">
         <nav class = "nav">
-            <ul class="nav__list">
+
+            <!--Mobile Nav Icon-->
+            <button class="burger" id="hamburger">
+                <i  id="mobileIcons" class="fa-regular fa-bars"></i>
+            </button>
+            <!--Navigation links-->
+            <ul class="nav__list mobile__closed" id="navbar">
                 <li class="nav__item"><a href=""class = "nav__link">Home</a></li>
                 <li class="nav__item"><a href=""class = "nav__link">Services</a></li>
                 <li class="nav__item"> <a href=""class = "nav__link">Partners</a></li>
@@ -31,7 +37,6 @@
                 <li class="nav__item"><a href=""class = "nav__link">About</a></li>
                 <li class="nav__item"><a href=""class = "nav__link">Contact</a></li>
             </ul>
-            
         </nav>
     </header>
 
@@ -173,6 +178,6 @@
 
        <img src="src/images/Twitter Icon.webp" alt="">
     </footer>
-
+<script src="src/js/master.js"></script>
 </body>
 </html>
