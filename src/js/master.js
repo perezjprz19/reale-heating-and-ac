@@ -13,7 +13,7 @@ function toggleMenu(){
         mobileIcons.classList.replace("fa-bars", "fa-x");
     }else {
         mobileIcons.classList.replace("fa-x","fa-bars");
-    }   navbar.style.animation("")
+    }  
 
 }
 
