@@ -1,18 +1,36 @@
 body {
+  font-family: "Poppins", sans-serif;
+  grid-template-rows: 10% 1fr;
   margin: 0;
   background: #333333;
   color: white;
   font-family: "Poppins", sans-serif;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.title__main {
+  font-size: 4em;
+  align-self: center;
+  text-align: center;
+}
+
 header {
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-row: 1/2;
+  grid-row: 1/2;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   margin-top: -1.5em;
-  padding: 1em;
+  padding: 4em 4em 2em 2em;
   background: #333333;
 }
 
@@ -35,6 +53,7 @@ header {
   background: transparent;
   font-size: 2em;
   width: max-content;
+  margin-right: 1em;
   border: none;
 }
 .burger:hover, .burger:active {
@@ -79,6 +98,21 @@ header {
   }
   100% {
     clip-path: circle(115% at top right);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .mobile__closed {
+    display: block;
+  }
+  .burger {
+    display: none;
+  }
+  .nav__list {
+    position: relative;
+    list-style: none;
+    background: none;
+    margin-top: 0;
+    display: flex;
   }
 }
 
