@@ -5,10 +5,13 @@ body {
   background: #333333;
   color: white;
   font-family: "Poppins", sans-serif;
+  position: relative;
 }
 
 main {
   display: flex;
+  position: absolute;
+  top: 15em;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -16,9 +19,31 @@ main {
 }
 
 .title__main {
-  font-size: 4em;
+  font-size: 2em;
   align-self: center;
   text-align: center;
+}
+
+.lead {
+  font-size: 1.5em;
+  font-style: italic;
+  opacity: 0.8;
+  text-align: center;
+  margin: 2em 0;
+}
+
+.container__cred {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo__cred {
+  width: 4em;
+}
+
+h2 {
+  font-size: 2em;
 }
 
 header {
@@ -32,6 +57,7 @@ header {
   margin-top: -1.5em;
   padding: 4em 4em 2em 2em;
   background: #333333;
+  z-index: 1;
 }
 
 .nav {
@@ -66,7 +92,7 @@ header {
 
 .nav__list {
   list-style: none;
-  background: linear-gradient(#2E3258, #333333);
+  background: linear-gradient(#2e3258, #333333);
   position: absolute;
   margin-top: 2.5em;
   animation: 0.5s circle-open;
@@ -114,6 +140,14 @@ header {
     margin-top: 0;
     display: flex;
   }
+}
+.cta__book {
+  margin: 4em 0;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  background: #ff7a15;
+  color: #ffffff;
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=main.css.map */
